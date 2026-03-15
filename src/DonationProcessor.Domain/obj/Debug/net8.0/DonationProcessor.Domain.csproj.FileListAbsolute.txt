@@ -1,0 +1,11 @@
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/bin/Debug/net8.0/DonationProcessor.Domain.deps.json
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/bin/Debug/net8.0/DonationProcessor.Domain.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/bin/Debug/net8.0/DonationProcessor.Domain.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.AssemblyInfoInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.AssemblyInfo.cs
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.csproj.CoreCompileInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/refint/DonationProcessor.Domain.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/ref/DonationProcessor.Domain.dll

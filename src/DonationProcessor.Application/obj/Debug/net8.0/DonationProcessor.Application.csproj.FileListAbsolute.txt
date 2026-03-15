@@ -1,0 +1,15 @@
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/bin/Debug/net8.0/DonationProcessor.Application.deps.json
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/bin/Debug/net8.0/DonationProcessor.Application.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/bin/Debug/net8.0/DonationProcessor.Application.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/bin/Debug/net8.0/DonationProcessor.Domain.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/bin/Debug/net8.0/DonationProcessor.Domain.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.csproj.AssemblyReference.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.AssemblyInfoInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.AssemblyInfo.cs
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.csproj.CoreCompileInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/Donation.77AD016E.Up2Date
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/refint/DonationProcessor.Application.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/Debug/net8.0/ref/DonationProcessor.Application.dll

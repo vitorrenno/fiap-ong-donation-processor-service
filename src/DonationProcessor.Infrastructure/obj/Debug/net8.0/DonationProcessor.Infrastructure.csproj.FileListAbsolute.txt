@@ -1,0 +1,17 @@
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Infrastructure.deps.json
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Infrastructure.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Infrastructure.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Application.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Domain.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Application.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Domain.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.csproj.AssemblyReference.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.AssemblyInfoInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.AssemblyInfo.cs
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/Donation.AC238A36.Up2Date
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/refint/DonationProcessor.Infrastructure.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.pdb
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/ref/DonationProcessor.Infrastructure.dll
