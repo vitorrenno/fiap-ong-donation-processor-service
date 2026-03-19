@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DonationProcessor.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+730dee8597237176960775586f75d742f31b639b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DonationProcessor.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DonationProcessor.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: donation-processor-worker
+  labels:
+    app: donation-processor-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: donation-processor-worker
+  template:
+    metadata:
+      labels:
+        app: donation-processor-worker
+    spec:
+      containers:
+        - name: donation-processor-worker
+          image: donation-processor-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          envFrom:
+            - configMapRef:
+                name: donation-processor-config
+          env:
+            - name: RabbitMQ__Password
+              valueFrom:
+                secretKeyRef:
+                  name: donation-processor-secrets
+                  key: RabbitMQ__Password
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8081
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8081
+            initialDelaySeconds: 20
+            periodSeconds: 20
+            timeoutSeconds: 3
+            failureThreshold: 3
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "300m"

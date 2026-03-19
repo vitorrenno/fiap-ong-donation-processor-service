@@ -1,19 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OB9uyPpv+I8=",
+  "dgSpecHash": "3StFOh3/y3E=",
   "success": true,
   "projectFilePath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj",
   "expectedPackageFiles": [
     "/Users/vitorrenno/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/mediatr/14.1.0/mediatr.14.1.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
-    "/Users/vitorrenno/.nuget/packages/system.diagnostics.diagnosticsource/10.0.0/system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
+    "/Users/vitorrenno/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/vitorrenno/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

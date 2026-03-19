@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  donation-processor-worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: donation-processor-worker
+    ports:
+      - "8081:8081"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8081
+      RabbitMQ__Host: rabbitmq
+      RabbitMQ__Port: 5672
+      RabbitMQ__Username: guest
+      RabbitMQ__Password: guest
+      RabbitMQ__QueueName: donation-received-queue
+    depends_on:
+      - rabbitmq
+    networks:
+      - donation-network
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: donation-processor-rabbitmq
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - donation-network
+
+networks:
+  donation-network:
+    driver: bridge

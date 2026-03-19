@@ -54,7 +54,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[14.1.0, )"
+              "version": "[11.1.0, )"
             }
           },
           "imports": [
@@ -183,6 +183,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[7.2.1, )"
@@ -255,6 +263,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -306,6 +318,15 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj": {
+                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj"
+              },
+              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj": {
+                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj"
+              },
+              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj": {
+                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj"
+              },
               "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj": {
                 "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj"
               }
@@ -328,6 +349,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"

@@ -1,0 +1,42 @@
+## .NET
+bin/
+obj/
+
+## User-specific files
+*.user
+*.rsuser
+*.suo
+
+## VS Code
+.vscode/
+
+## Rider
+.idea/
+
+## OS
+.DS_Store
+
+## Logs
+*.log
+
+## Test results
+TestResults/
+*.trx
+
+## Coverage
+coverage/
+coverage-report/
+
+## Publish
+publish/
+
+## Secrets / env local
+.env
+.env.*
+
+## Docker overrides locais
+docker-compose.override.yml
+
+## NuGet
+*.nupkg
+packages/

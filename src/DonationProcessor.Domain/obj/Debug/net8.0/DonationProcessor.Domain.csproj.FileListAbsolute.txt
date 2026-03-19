@@ -5,6 +5,7 @@
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.AssemblyInfoInputs.cache
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.AssemblyInfo.cs
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.csproj.CoreCompileInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.sourcelink.json
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/refint/DonationProcessor.Domain.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.pdb

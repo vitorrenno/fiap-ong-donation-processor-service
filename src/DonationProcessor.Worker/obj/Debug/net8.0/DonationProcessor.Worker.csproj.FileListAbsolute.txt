@@ -8,6 +8,11 @@
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/FluentValidation.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/MediatR.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
@@ -31,10 +36,6 @@
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
-/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
-/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
-/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/RabbitMQ.Client.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Serilog.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/bin/Debug/net8.0/Serilog.AspNetCore.dll
@@ -64,6 +65,7 @@
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.AssemblyInfoInputs.cache
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.AssemblyInfo.cs
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.csproj.CoreCompileInputs.cache
+/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.sourcelink.json
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/Donation.8030F4DD.Up2Date
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.dll
 /Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/Debug/net8.0/refint/DonationProcessor.Worker.dll
