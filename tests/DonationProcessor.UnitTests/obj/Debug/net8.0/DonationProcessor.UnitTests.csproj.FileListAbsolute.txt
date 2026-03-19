@@ -6,6 +6,7 @@
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/DonationProcessor.UnitTests.runtimeconfig.json
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/DonationProcessor.UnitTests.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/DonationProcessor.UnitTests.pdb
+/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/FluentAssertions.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -17,6 +18,8 @@
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/testhost.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/NuGet.Frameworks.dll
+/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/xunit.abstractions.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/xunit.assert.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/xunit.core.dll
@@ -86,6 +89,7 @@
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/DonationProcessor.Domain.dll
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/DonationProcessor.Domain.pdb
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.csproj.AssemblyReference.cache
@@ -100,7 +104,3 @@
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.pdb
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.genruntimeconfig.cache
 /Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/ref/DonationProcessor.UnitTests.dll
-/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/FluentAssertions.dll
-/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
-/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
-/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.UnitTests/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
