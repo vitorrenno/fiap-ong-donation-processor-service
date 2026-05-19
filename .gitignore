@@ -1,6 +1,8 @@
 ## .NET
 bin/
 obj/
+*.dll
+*.pdb
 
 ## User-specific files
 *.user
@@ -40,3 +42,4 @@ docker-compose.override.yml
 ## NuGet
 *.nupkg
 packages/
+/.vs
