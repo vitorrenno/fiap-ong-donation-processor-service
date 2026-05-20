@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.GetAllDonation
+namespace DonationProcessor.Application.Features.Donations.GetAllDonation
 {
     public sealed record  GetAllDonationCommand : IRequest<IEnumerable<GetAllDonationResponse>>
     {

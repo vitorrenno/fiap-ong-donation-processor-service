@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.GetDonationById
+namespace DonationProcessor.Application.Features.Donations.GetDonationById
 {
     public sealed record GetDonationByIdCommand(Guid Id) : IRequest<GetDonationByIdResponse> { }
 }

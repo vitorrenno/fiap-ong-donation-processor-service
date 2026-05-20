@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace IdentityCampaign.Application.Features.Donation.GetAllDonation
+namespace DonationProcessor.Application.Features.Donations.GetAllDonation
 {
     public class GetAllDonationValidator : AbstractValidator<GetAllDonationCommand>
     {

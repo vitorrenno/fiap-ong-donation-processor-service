@@ -1,8 +1,8 @@
+using DonationProcessor.Application.Features.Donations.CreateDonation;
+using DonationProcessor.IntegrationTests.Commands.Donation;
 using FluentAssertions;
-using IdentityCampaign.Application.Features.Donation.CreateDonation;
-using IdentityCampaign.IntegrationTests.Commands.Donation;
 
-namespace IdentityCampaign.UnitTests.Donation
+namespace DonationProcessor.UnitTests.Donation
 {
     public class CreateDonationCommandValidatorTest
     {

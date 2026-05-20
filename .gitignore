@@ -72,3 +72,4 @@ packages/
 
 # Local project
 local.settings.json
+/tests/DonationProcessor.IntegrationTests/bin/Debug/net8.0/appsettings.json

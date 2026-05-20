@@ -1,7 +1,7 @@
 using DonationProcessor.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-namespace IdentityCampaign.Infrastructure;
+namespace DonationProcessor.Infrastructure;
 
 public class AppDbContextFactory: IDesignTimeDbContextFactory<DonationProcessorDbContext>
 {

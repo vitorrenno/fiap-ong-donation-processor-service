@@ -1,4 +1,4 @@
-﻿namespace IdentityCampaign.Application.Messaging.Events;
+﻿namespace DonationProcessor.Application.Messaging.Events;
 
 public record DonationReceivedEvent(
     Guid DonationId,

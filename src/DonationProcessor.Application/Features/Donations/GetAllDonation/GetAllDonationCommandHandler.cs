@@ -1,8 +1,8 @@
 using AutoMapper;
-using IdentityCampaign.Application.Abstractions;
+using DonationProcessor.Application.Abstractions;
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.GetAllDonation
+namespace DonationProcessor.Application.Features.Donations.GetAllDonation
 {
     public class GetAllDonationCommandHandler : IRequestHandler<GetAllDonationCommand, IEnumerable<GetAllDonationResponse>>
     {

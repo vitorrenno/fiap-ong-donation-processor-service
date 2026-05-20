@@ -25,7 +25,7 @@ namespace DonationProcessor.Infrastructure.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("IdentityCampaign.Domain.Entities.Donation", b =>
+            modelBuilder.Entity("DonationProcessor.Domain.Entities.Donation", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

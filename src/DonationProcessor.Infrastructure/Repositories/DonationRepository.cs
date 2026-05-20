@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using DonationProcessor.Application.Abstractions;
+using DonationProcessor.Domain.Entities;
 using DonationProcessor.Infrastructure.Persistence;
-using IdentityCampaign.Application.Abstractions;
-using IdentityCampaign.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentityCampaign.Infrastructure.Repositories
+namespace DonationProcessor.Infrastructure.Repositories
 {
     public class DonationRepository : IDonationRepository
     {

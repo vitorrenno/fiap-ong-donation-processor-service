@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
-using IdentityCampaign.Application.Abstractions;
-using IdentityCampaign.Application.Features.Donation.CreateDonation;
+using DonationProcessor.Application.Abstractions;
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.GetDonationById
+namespace DonationProcessor.Application.Features.Donations.GetDonationById
 {
     public class GetDonationByIdCommandHandler : IRequestHandler<GetDonationByIdCommand, GetDonationByIdResponse>
     {

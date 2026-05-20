@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCampaign.Domain.Entities;
+namespace DonationProcessor.Domain.Entities;
 
 public class Donation
 {

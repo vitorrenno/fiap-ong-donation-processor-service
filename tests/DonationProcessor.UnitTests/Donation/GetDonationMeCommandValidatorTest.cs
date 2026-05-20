@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DonationProcessor.Application.Features.Donations.GetDonationMe;
+using DonationProcessor.IntegrationTests.Commands.Donation;
 using FluentAssertions;
-using IdentityCampaign.Application.Features.Donation.GetDonationMe;
-using IdentityCampaign.IntegrationTests.Commands.Donation;
 
-namespace IdentityCampaign.UnitTests.Donation
+namespace DonationProcessor.UnitTests.Donation
 {
     public class GetDonationMeCommandValidatorTest
     {

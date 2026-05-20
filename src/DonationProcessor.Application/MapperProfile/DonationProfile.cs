@@ -1,12 +1,12 @@
 using AutoMapper;
-using IdentityCampaign.Application.DTOs.Donation;
-using IdentityCampaign.Application.Features.Donation.CreateDonation;
-using IdentityCampaign.Application.Features.Donation.GetAllDonation;
-using IdentityCampaign.Application.Features.Donation.GetDonationById;
-using IdentityCampaign.Application.Features.Donation.GetDonationMe;
-using IdentityCampaign.Domain.Entities;
+using DonationProcessor.Application.DTOs.Donation;
+using DonationProcessor.Application.Features.Donations.CreateDonation;
+using DonationProcessor.Application.Features.Donations.GetAllDonation;
+using DonationProcessor.Application.Features.Donations.GetDonationById;
+using DonationProcessor.Application.Features.Donations.GetDonationMe;
+using DonationProcessor.Domain.Entities;
 
-namespace IdentityCampaign.Application.MapperProfile
+namespace DonationProcessor.Application.MapperProfile
 {
     public class DonationProfile : Profile
     {

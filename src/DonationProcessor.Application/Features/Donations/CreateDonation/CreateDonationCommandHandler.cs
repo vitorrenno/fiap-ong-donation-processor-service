@@ -1,11 +1,11 @@
 using AutoMapper;
-using IdentityCampaign.Application.Messaging.Events;
-using IdentityCampaign.Application.Abstractions;
-using IdentityCampaign.Application.Features.Donation.CreateDonation;
+using DonationProcessor.Application.Abstractions;
+using DonationProcessor.Application.Messaging.Events;
+using DonationProcessor.Domain.Entities;
 using MassTransit;
 using MediatR;
 
-namespace DonationProcessor.Application.Features.Donation.CreateDonation
+namespace DonationProcessor.Application.Features.Donations.CreateDonation
 {
     public class CreateDonationCommandHandler : IRequestHandler<CreateDonationCommand, CreateDonationResponse>
     {
@@ -22,7 +22,7 @@ namespace DonationProcessor.Application.Features.Donation.CreateDonation
 
         public async Task<CreateDonationResponse> Handle(CreateDonationCommand request, CancellationToken cancellationToken)
         {
-            var donation = new IdentityCampaign.Domain.Entities.Donation(
+            var donation = new Donation(
                 request.vAmount,
                 request.IdCampaign,
                 request.IdUser);

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCampaign.Application.Features.Donation.GetDonationMe
+namespace DonationProcessor.Application.Features.Donations.CreateDonation
 {
-    public class GetDonationMeResponse
+    public class CreateDonationResponse
     {
         public Guid Id { get; set; }
         public DateTime dateDonated { get; set; }

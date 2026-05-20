@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
 
-namespace IdentityCampaign.Application.Features.Donation.CreateDonation
+namespace DonationProcessor.Application.Features.Donations.CreateDonation
 {
     public class CreateDonationValidator : AbstractValidator<CreateDonationCommand>
     {

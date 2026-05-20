@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.CreateDonation
+namespace DonationProcessor.Application.Features.Donations.CreateDonation
 {
     public sealed record CreateDonationCommand : IRequest<CreateDonationResponse>
     {

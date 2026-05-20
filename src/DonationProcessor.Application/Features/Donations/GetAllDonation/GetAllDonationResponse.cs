@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCampaign.Application.Features.Donation.GetAllDonation
+namespace DonationProcessor.Application.Features.Donations.GetAllDonation
 {
     public class GetAllDonationResponse
     {
