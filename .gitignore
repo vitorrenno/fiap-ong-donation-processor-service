@@ -87,3 +87,4 @@ local.settings.json
 /tests/DonationProcessor.IntegrationTests/obj/Debug/net8.0/DonationProcessor.IntegrationTests.GlobalUsings.g.cs
 /tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.GlobalUsings.g.cs
 /src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.GlobalUsings.g.cs
+/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Infrastructure.deps.json
