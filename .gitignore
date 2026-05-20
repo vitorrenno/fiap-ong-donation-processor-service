@@ -81,3 +81,9 @@ packages/
 
 # Local project
 local.settings.json
+/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.GlobalUsings.g.cs
+/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.GlobalUsings.g.cs
+/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.GlobalUsings.g.cs
+/tests/DonationProcessor.IntegrationTests/obj/Debug/net8.0/DonationProcessor.IntegrationTests.GlobalUsings.g.cs
+/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.GlobalUsings.g.cs
+/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.GlobalUsings.g.cs

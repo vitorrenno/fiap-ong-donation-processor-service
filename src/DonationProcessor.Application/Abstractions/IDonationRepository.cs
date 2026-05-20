@@ -1,9 +1,21 @@
-using DonationProcessor.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using IdentityCampaign.Domain.Entities;
 
-namespace DonationProcessor.Application.Abstractions;
-
-public interface IDonationRepository
+namespace IdentityCampaign.Application.Abstractions
 {
-    Task AddAsync(Donation donation, CancellationToken cancellationToken = default);
-    Task<Donation?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
+    public interface IDonationRepository
+    {
+        Task AddAsync(Donation donation, CancellationToken cancellationToken = default);
+
+        Task<Donation> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
+
+        Task<IReadOnlyList<Donation>> GetAllAsync(CancellationToken cancellationToken = default);
+
+        Task<IReadOnlyList<Donation>> GetMeAsync(Guid idUser, CancellationToken cancellationToken = default);
+
+    }
 }

@@ -1,4 +1,4 @@
-using DonationProcessor.Domain.Entities;
+using IdentityCampaign.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DonationProcessor.Infrastructure.Persistence;
@@ -9,10 +9,7 @@ public class DonationProcessorDbContext : DbContext
         : base(options)
     {
     }
-
     public DbSet<Donation> Donations => Set<Donation>();
-    public DbSet<CampaignBalance> CampaignBalances => Set<CampaignBalance>();
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(DonationProcessorDbContext).Assembly);
