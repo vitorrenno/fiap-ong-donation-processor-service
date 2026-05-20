@@ -40,3 +40,4 @@ docker-compose.override.yml
 ## NuGet
 *.nupkg
 packages/
+/.vs
