@@ -1,33 +1,49 @@
 using AutoMapper;
+using IdentityCampaign.Application.Messaging.Events;
 using IdentityCampaign.Application.Abstractions;
-using IdentityCampaign.Domain.Entities;
+using IdentityCampaign.Application.Features.Donation.CreateDonation;
+using MassTransit;
 using MediatR;
 
-namespace IdentityCampaign.Application.Features.Donation.CreateDonation
+namespace DonationProcessor.Application.Features.Donation.CreateDonation
 {
     public class CreateDonationCommandHandler : IRequestHandler<CreateDonationCommand, CreateDonationResponse>
     {
         private readonly IDonationRepository _donationRepository;
         private readonly IMapper _mapper;
-        public CreateDonationCommandHandler(IDonationRepository donationRepository,  IMapper mapper)
+        private readonly IPublishEndpoint _publishEndpoint;
+
+        public CreateDonationCommandHandler(IDonationRepository donationRepository, IMapper mapper, IPublishEndpoint publishEndpoint)
         {
             _donationRepository = donationRepository;
             _mapper = mapper;
+            _publishEndpoint = publishEndpoint;
         }
 
         public async Task<CreateDonationResponse> Handle(CreateDonationCommand request, CancellationToken cancellationToken)
         {
-            var donation = new Domain.Entities.Donation(request.vAmount,request.IdCampaign,request.IdUser);
-
-            //Verifica se a campanha existe antes de doar para a mesma.
-            //var campaign = await _campaignRepository.GetByIdAsync(request.IdCampaign, cancellationToken);
-            //if (campaign == null)
-            //    throw new KeyNotFoundException($"Campanha com ID {request.IdCampaign} não encontrado.");
+            var donation = new IdentityCampaign.Domain.Entities.Donation(
+                request.vAmount,
+                request.IdCampaign,
+                request.IdUser);
 
             //Aplicar chamada para o service aqui
             await _donationRepository.AddAsync(donation, cancellationToken);
-            return _mapper.Map<CreateDonationResponse>(donation);
 
+            Console.WriteLine("PUBLICANDO EVENTO");
+
+            //Publica evento no RabbitMQ
+            await _publishEndpoint.Publish(
+                new DonationReceivedEvent(
+                    donation.Id,
+                    donation.IdCampaign,
+                    donation.vAmount,
+                    DateTime.UtcNow),
+                cancellationToken);
+
+            Console.WriteLine("EVENTO PUBLICADO");
+
+            return _mapper.Map<CreateDonationResponse>(donation);
         }
     }
 }
