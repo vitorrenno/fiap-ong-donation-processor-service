@@ -1,3 +1,5 @@
+using DonationProcessor.Application.Features.Donation.CreateDonation;
+using IdentityCampaign.Application.Messaging.Events;
 using DonationProcessor.Infrastructure.Persistence;
 using FluentValidation;
 using IdentityCampaign.Application.Abstractions;
@@ -7,9 +9,9 @@ using IdentityCampaign.Application.Features.Donation.GetDonationById;
 using IdentityCampaign.Application.Features.Donation.GetDonationMe;
 using IdentityCampaign.Application.MapperProfile;
 using IdentityCampaign.Infrastructure.Repositories;
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +27,6 @@ builder.Services.AddDbContext<DonationProcessorDbContext>(options =>
 #region Interfaces
 builder.Services.AddScoped<IDonationRepository, DonationRepository>();
 #endregion
-
 
 #region MediatR
 //Donation
@@ -49,6 +50,26 @@ builder.Services.AddScoped<IValidator<GetDonationMeCommand>, GetDonationMeValida
 
 #endregion
 
+#region MassTransit
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQ:Host"], h =>
+        {
+            h.Username(builder.Configuration["RabbitMQ:Username"]!);
+            h.Password(builder.Configuration["RabbitMQ:Password"]!);
+        });
+
+        cfg.Message<DonationReceivedEvent>(m =>
+        {
+            m.SetEntityName("donation-received");
+        });
+    });
+});
+
+#endregion
 
 var app = builder.Build();
 
