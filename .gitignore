@@ -19,18 +19,14 @@ obj/
 .idea/
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
+Debug/
+Release/
 x64/
 x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
-[Oo]bj/
 
 # IDE
 *.sln.iml
@@ -45,8 +41,6 @@ Thumbs.db
 
 # Logs and diagnostics
 *.log
-*.logs
-Logs/
 logs/
 
 # Test results
@@ -55,11 +49,9 @@ TestResults/
 .coverage
 coverage/
 coverage-report/
-OpenCover/
 
 # Publish and build output
 publish/
-publishprofiles/
 
 # Secrets and environment
 .env
@@ -71,7 +63,6 @@ appsettings.*.local.json
 
 # Docker
 docker-compose.override.yml
-*.dcproj-user
 
 # NuGet
 *.nupkg
@@ -81,10 +72,3 @@ packages/
 
 # Local project
 local.settings.json
-/src/DonationProcessor.Application/obj/Debug/net8.0/DonationProcessor.Application.GlobalUsings.g.cs
-/src/DonationProcessor.Domain/obj/Debug/net8.0/DonationProcessor.Domain.GlobalUsings.g.cs
-/src/DonationProcessor.Infrastructure/obj/Debug/net8.0/DonationProcessor.Infrastructure.GlobalUsings.g.cs
-/tests/DonationProcessor.IntegrationTests/obj/Debug/net8.0/DonationProcessor.IntegrationTests.GlobalUsings.g.cs
-/tests/DonationProcessor.UnitTests/obj/Debug/net8.0/DonationProcessor.UnitTests.GlobalUsings.g.cs
-/src/DonationProcessor.Worker/obj/Debug/net8.0/DonationProcessor.Worker.GlobalUsings.g.cs
-/src/DonationProcessor.Infrastructure/bin/Debug/net8.0/DonationProcessor.Infrastructure.deps.json
