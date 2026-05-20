@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.IntegrationTests/DonationProcessor.IntegrationTests.csproj": {}
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\tests\\DonationProcessor.IntegrationTests\\DonationProcessor.IntegrationTests.csproj": {}
   },
   "projects": {
-    "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\DonationProcessor.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj",
-        "projectName": "DonationProcessor.Application",
-        "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj",
-        "packagesPath": "/Users/vitorrenno/.nuget/packages/",
-        "outputPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/obj/",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\DonationProcessor.Api.csproj",
+        "projectName": "DonationProcessor.Api",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\DonationProcessor.Api.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vitorrenno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj"
               }
             }
           }
@@ -41,20 +48,143 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Docker.DotNet": {
+              "target": "Package",
+              "version": "[3.125.15, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[12.1.1, )"
             },
             "MediatR": {
               "target": "Package",
+              "version": "[14.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
               "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj",
+        "projectName": "DonationProcessor.Application",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[16.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
             }
           },
           "imports": [
@@ -73,26 +203,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj",
         "projectName": "DonationProcessor.Domain",
-        "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj",
-        "packagesPath": "/Users/vitorrenno/.nuget/packages/",
-        "outputPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/obj/",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vitorrenno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -110,8 +247,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -132,37 +268,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj",
         "projectName": "DonationProcessor.Infrastructure",
-        "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj",
-        "packagesPath": "/Users/vitorrenno/.nuget/packages/",
-        "outputPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vitorrenno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj"
               },
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj"
               }
             }
           }
@@ -176,24 +319,41 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.10, )"
             },
-            "RabbitMQ.Client": {
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[7.2.1, )"
+              "version": "[9.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -212,37 +372,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\DonationProcessor.Worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\DonationProcessor.Worker.csproj",
         "projectName": "DonationProcessor.Worker",
-        "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj",
-        "packagesPath": "/Users/vitorrenno/.nuget/packages/",
-        "outputPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/obj/",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\DonationProcessor.Worker.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vitorrenno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\DonationProcessor.Api.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\DonationProcessor.Api\\DonationProcessor.Api.csproj"
               },
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj"
+              },
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj"
               }
             }
           }
@@ -256,13 +426,16 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.1.0, )"
@@ -292,43 +465,50 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.IntegrationTests/DonationProcessor.IntegrationTests.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\tests\\DonationProcessor.IntegrationTests\\DonationProcessor.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.IntegrationTests/DonationProcessor.IntegrationTests.csproj",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\tests\\DonationProcessor.IntegrationTests\\DonationProcessor.IntegrationTests.csproj",
         "projectName": "DonationProcessor.IntegrationTests",
-        "projectPath": "/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.IntegrationTests/DonationProcessor.IntegrationTests.csproj",
-        "packagesPath": "/Users/vitorrenno/.nuget/packages/",
-        "outputPath": "/Users/vitorrenno/donation-processor-service/tests/DonationProcessor.IntegrationTests/obj/",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\tests\\DonationProcessor.IntegrationTests\\DonationProcessor.IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\tests\\DonationProcessor.IntegrationTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\VISUAL STUDIO\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vitorrenno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Application/DonationProcessor.Application.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Application\\DonationProcessor.Application.csproj"
               },
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj"
               },
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Infrastructure/DonationProcessor.Infrastructure.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Infrastructure\\DonationProcessor.Infrastructure.csproj"
               },
-              "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj": {
-                "projectPath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Worker/DonationProcessor.Worker.csproj"
+              "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\DonationProcessor.Worker.csproj": {
+                "projectPath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Worker\\DonationProcessor.Worker.csproj"
               }
             }
           }
@@ -342,20 +522,27 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.5, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -390,7 +577,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

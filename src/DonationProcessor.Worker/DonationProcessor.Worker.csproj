@@ -8,12 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DonationProcessor.Api\DonationProcessor.Api.csproj" />
     <ProjectReference Include="..\DonationProcessor.Application\DonationProcessor.Application.csproj" />
     <ProjectReference Include="..\DonationProcessor.Infrastructure\DonationProcessor.Infrastructure.csproj" />
   </ItemGroup>

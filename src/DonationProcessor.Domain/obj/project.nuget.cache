@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aRfqsxfkq8s=",
+  "dgSpecHash": "N1Zgx05jf+jF5YwgXZuPXTbrZjX8wDhcRAWZyk0/QXV/G5AgmZDefe/8pGFSE5xAkO7ReZabfCZi4YIPD88/mg==",
   "success": true,
-  "projectFilePath": "/Users/vitorrenno/donation-processor-service/src/DonationProcessor.Domain/DonationProcessor.Domain.csproj",
+  "projectFilePath": "C:\\Users\\gamer\\source\\repos\\fiap-ong-donation-processor-service\\src\\DonationProcessor.Domain\\DonationProcessor.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

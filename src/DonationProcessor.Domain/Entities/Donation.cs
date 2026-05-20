@@ -1,35 +1,27 @@
-namespace DonationProcessor.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IdentityCampaign.Domain.Entities;
 
 public class Donation
 {
-    public Guid Id { get; private set; }
-    public Guid CampaignId { get; private set; }
-    public Guid DonorId { get; private set; }
-    public decimal Amount { get; private set; }
-    public DateTime ProcessedAt { get; private set; }
-
-    private Donation()
+    public Guid Id { get; set; }
+    public DateTime dateDonated { get; set; }
+    public decimal vAmount { get; set; }
+    public Guid IdCampaign { get; set; }
+    public Guid IdUser { get; set; }
+    public Donation() { }
+    public Donation(decimal vAmount, Guid IdCampaign, Guid idUser)
     {
-    }
-
-    public Donation(Guid id, Guid campaignId, Guid donorId, decimal amount)
-    {
-        if (id == Guid.Empty)
-            throw new ArgumentException("Donation id is required.");
-
-        if (campaignId == Guid.Empty)
-            throw new ArgumentException("Campaign id is required.");
-
-        if (donorId == Guid.Empty)
-            throw new ArgumentException("Donor id is required.");
-
-        if (amount <= 0)
-            throw new ArgumentException("Donation amount must be greater than zero.");
-
-        Id = id;
-        CampaignId = campaignId;
-        DonorId = donorId;
-        Amount = amount;
-        ProcessedAt = DateTime.UtcNow;
+        this.Id = Guid.NewGuid();
+        this.dateDonated = DateTime.Now;
+        this.vAmount = vAmount;
+        this.IdCampaign = IdCampaign;
+        this.IdUser = idUser;
     }
 }
+
+
