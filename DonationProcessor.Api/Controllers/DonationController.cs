@@ -1,13 +1,13 @@
 using AutoMapper;
-using IdentityCampaign.Application.DTOs.Donation;
-using IdentityCampaign.Application.Features.Donation.CreateDonation;
-using IdentityCampaign.Application.Features.Donation.GetAllDonation;
-using IdentityCampaign.Application.Features.Donation.GetDonationById;
-using IdentityCampaign.Application.Features.Donation.GetDonationMe;
+using DonationProcessor.Application.DTOs.Donation;
+using DonationProcessor.Application.Features.Donations.CreateDonation;
+using DonationProcessor.Application.Features.Donations.GetAllDonation;
+using DonationProcessor.Application.Features.Donations.GetDonationById;
+using DonationProcessor.Application.Features.Donations.GetDonationMe;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IdentityCampaign.Api.Controllers
+namespace DonationProcessor.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

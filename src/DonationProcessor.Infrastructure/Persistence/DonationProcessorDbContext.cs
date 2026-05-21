@@ -1,4 +1,4 @@
-using IdentityCampaign.Domain.Entities;
+using DonationProcessor.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DonationProcessor.Infrastructure.Persistence;

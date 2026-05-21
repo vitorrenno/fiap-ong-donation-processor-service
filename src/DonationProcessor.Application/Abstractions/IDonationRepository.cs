@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IdentityCampaign.Domain.Entities;
+using DonationProcessor.Domain.Entities;
 
-namespace IdentityCampaign.Application.Abstractions
+namespace DonationProcessor.Application.Abstractions
 {
     public interface IDonationRepository
     {

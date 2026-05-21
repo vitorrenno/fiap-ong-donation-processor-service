@@ -1,43 +1,75 @@
-## .NET
+﻿# .NET
 bin/
 obj/
+*.dll
+*.exe
+*.pdb
+*.orig
 
-## User-specific files
+# User-specific files
 *.user
 *.rsuser
 *.suo
+*.VC.db
+*.VC.VC.opendb
 
-## VS Code
+# Visual Studio / MSBuild
+.vs/
 .vscode/
-
-## Rider
 .idea/
 
-## OS
+# Build results
+Debug/
+Release/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+
+# IDE
+*.sln.iml
+*.code-workspace
+
+# OS-specific
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
 
-## Logs
+# Logs and diagnostics
 *.log
+logs/
 
-## Test results
+# Test results
 TestResults/
 *.trx
-
-## Coverage
+.coverage
 coverage/
 coverage-report/
 
-## Publish
+# Publish and build output
 publish/
 
-## Secrets / env local
+# Secrets and environment
 .env
 .env.*
+!.env.example
+secrets/
+appsettings.local.json
+appsettings.*.local.json
 
-## Docker overrides locais
+# Docker
 docker-compose.override.yml
 
-## NuGet
+# NuGet
 *.nupkg
+*.snupkg
 packages/
-/.vs
+.nuget/
+
+# Local project
+local.settings.json
+/tests/DonationProcessor.IntegrationTests/bin/Debug/net8.0/appsettings.json

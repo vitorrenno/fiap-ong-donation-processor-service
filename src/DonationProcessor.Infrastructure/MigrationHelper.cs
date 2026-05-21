@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MySqlConnector;
 
-namespace IdentityCampaign.Infrastructure;
+namespace DonationProcessor.Infrastructure;
 
 public static class MigrationHelper
 {

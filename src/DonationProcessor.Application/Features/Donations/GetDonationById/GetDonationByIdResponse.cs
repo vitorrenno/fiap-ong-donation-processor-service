@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DonationProcessor.Application.DTOs.Donation
+namespace DonationProcessor.Application.Features.Donations.GetDonationById
 {
-    public class CreateDonation
+    public class GetDonationByIdResponse
     {
+        public Guid Id { get; set; }
+        public DateTime dateDonated { get; set; }
         public decimal vAmount { get; set; }
         public Guid IdCampaign { get; set; }
         public Guid IdUser { get; set; }

@@ -2,14 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: donation-processor-worker-service
-  labels:
-    app: donation-processor-worker
+  namespace: hackathon-9nett
 spec:
-  type: ClusterIP
   selector:
     app: donation-processor-worker
   ports:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 8081
