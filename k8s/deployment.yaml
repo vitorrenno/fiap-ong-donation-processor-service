@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: donation-processor
-          image: donation-processor:v1
-          imagePullPolicy: IfNotPresent
+          image: donation-processor:latest
+          imagePullPolicy: Always
           envFrom:
             - configMapRef:
                 name: donation-processor-config

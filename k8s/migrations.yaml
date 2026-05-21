@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: donation-processor-migrations
+  namespace: hackathon-9nett
+spec:
+  backoffLimit: 5
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: migrate
+          image: donation-processor:latest
+          command: ["dotnet", "DonationProcessor.Worker.dll", "migrate"]
+          envFrom:
+            - configMapRef:
+                name: donation-processor-config

@@ -4,7 +4,6 @@ metadata:
   name: donation-processor-config
   namespace: hackathon-9nett
 data:
-  ASPNETCORE_ENVIRONMENT: "Development"
-  ASPNETCORE_URLS: "http://+:80"
-  MYSQL_CONNECTION: "Server=mysql;Port=3306;Database=hackathondb;User=root;Password=root;"
+  ConnectionStrings__DefaultConnection: "Server=mysql;Port=3306;Database=hackathondb;User=appuser;Password=app123;"
   RABBITMQ_HOST: "rabbitmq"
+  ASPNETCORE_URLS: "http://+:8080"
