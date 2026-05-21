@@ -1,3 +1,5 @@
+using DonationProcessor.Api.Monitoring;
+using DonationProcessor.Api.Monitoring.MonitoringMiddleware;
 using DonationProcessor.Application.Abstractions;
 using DonationProcessor.Application.Features.Donations.CreateDonation;
 using DonationProcessor.Application.Features.Donations.GetAllDonation;
@@ -11,6 +13,8 @@ using FluentValidation;
 using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Prometheus;
+using Prometheus.DotNetRuntime;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +29,8 @@ builder.Services.AddDbContext<DonationProcessorDbContext>(options =>
 
 #region Interfaces
 builder.Services.AddScoped<IDonationRepository, DonationRepository>();
+//PROMETHEUS
+builder.Services.AddScoped<IMetricsService, MetricsService>();
 #endregion
 
 #region MediatR
@@ -33,7 +39,6 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Creat
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetDonationByIdCommandHandler).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllDonationCommandHandler).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetDonationMeCommandHandler).Assembly));
-
 #endregion
 
 #region AutoMapper
@@ -46,7 +51,6 @@ builder.Services.AddScoped<IValidator<CreateDonationCommand>, CreateDonationVali
 builder.Services.AddScoped<IValidator<GetDonationByIdCommand>, GetDonationByIdValidator>();
 builder.Services.AddScoped<IValidator<GetAllDonationCommand>, GetAllDonationValidator>();
 builder.Services.AddScoped<IValidator<GetDonationMeCommand>, GetDonationMeValidator>();
-
 #endregion
 
 #region MassTransit
@@ -70,6 +74,8 @@ builder.Services.AddMassTransit(x =>
 
 #endregion
 
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -80,6 +86,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
+DotNetRuntimeStatsBuilder.Default().StartCollecting();
+
+app.UseRouting();
+
+app.UseMiddleware<MonitoringMiddleware>();
+app.MapMetrics();
+
 
 app.MapControllers();
 app.MapHealthChecks("/health");
