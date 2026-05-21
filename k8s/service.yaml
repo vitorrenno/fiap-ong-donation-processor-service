@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: donation-processor-worker-service
+  name: donation-processor-service
   namespace: hackathon-9nett
 spec:
   selector:
-    app: donation-processor-worker
+    app: donation-processor
   ports:
     - name: http
-      protocol: TCP
-      port: 80
+      port: 8080
+      targetPort: 8080
