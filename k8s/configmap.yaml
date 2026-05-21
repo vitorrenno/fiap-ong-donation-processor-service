@@ -5,5 +5,8 @@ metadata:
   namespace: hackathon-9nett
 data:
   ConnectionStrings__DefaultConnection: "Server=mysql;Port=3306;Database=hackathondb;User=appuser;Password=app123;"
-  RABBITMQ_HOST: "rabbitmq"
   ASPNETCORE_URLS: "http://+:8080"
+  ASPNETCORE_ENVIRONMENT: "Kubernetes"
+  RabbitMQ__Host: "rabbitmq"
+  RabbitMQ__Username: "guest"
+  RabbitMQ__Password: "guest"

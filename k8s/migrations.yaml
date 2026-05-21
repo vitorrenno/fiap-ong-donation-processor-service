@@ -11,7 +11,7 @@ spec:
       containers:
         - name: migrate
           image: donation-processor:latest
-          command: ["dotnet", "DonationProcessor.Worker.dll", "migrate"]
+          command: ["dotnet", "DonationProcessor.Api.dll", "migrate"]
           envFrom:
             - configMapRef:
                 name: donation-processor-config

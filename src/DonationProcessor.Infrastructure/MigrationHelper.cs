@@ -10,20 +10,37 @@ public static class MigrationHelper
 {
     public static void ApplyMigrations(IApplicationBuilder app)
     {
-        using var scope = app.ApplicationServices.CreateScope();
-        var db = scope.ServiceProvider.GetRequiredService<DonationProcessorDbContext>();
-        
-        try
+        var maxRetries = 5;
+        var retryCount = 0;
+
+        while (retryCount < maxRetries)
         {
-            db.Database.Migrate();
-            Console.WriteLine("Migrations applied successfully.");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error applying migrations: {ex.Message}");
-            throw;
+            try
+            {
+                using var scope = app.ApplicationServices.CreateScope();
+                var db = scope.ServiceProvider.GetRequiredService<DonationProcessorDbContext>();
+
+                Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Applying EF Core migrations...");
+
+                db.Database.Migrate();
+
+                Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Migrations applied successfully.");
+                return;
+            }
+            catch (Exception ex)
+            {
+                retryCount++;
+
+                Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Migration attempt {retryCount} failed: {ex.Message}");
+
+                if (retryCount >= maxRetries)
+                    throw;
+
+                Thread.Sleep((int)Math.Pow(2, retryCount) * 1000);
+            }
         }
     }
+
     // Wait for Docker to start up before applying migrations automatically.
     public static async Task WaitForMySqlAsync(string connectionString)
     {

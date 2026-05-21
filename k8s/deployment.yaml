@@ -3,20 +3,86 @@ kind: Deployment
 metadata:
   name: donation-processor
   namespace: hackathon-9nett
+  labels:
+    app: donation-processor
 spec:
   replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+
   selector:
     matchLabels:
       app: donation-processor
+
   template:
     metadata:
       labels:
         app: donation-processor
+
     spec:
+      initContainers:
+        - name: wait-for-mysql
+          image: mysql:8.0
+          command:
+            - sh
+            - -c
+            - |
+              echo "Aguardando MySQL..."
+              until mysqladmin ping -h mysql -u root -p$MYSQL_ROOT_PASSWORD --silent; do
+                sleep 3
+              done
+              echo "MySQL pronto!"
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_ROOT_PASSWORD
+
       containers:
         - name: donation-processor
           image: donation-processor:latest
           imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8080
+
           envFrom:
             - configMapRef:
                 name: donation-processor-config
+          
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            failureThreshold: 30
+            periodSeconds: 10
+
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "300m"
